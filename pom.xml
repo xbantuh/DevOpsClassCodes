@@ -427,6 +427,12 @@
                                 <format>xml</format>
                             </formats>
                         </configuration>
+		        <exclusions>
+                           <exclusion>
+                              <groupId>com.sun</groupId>
+                              <artifactId>tools</artifactId>
+                           </exclusion>
+                        </exclusions>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
