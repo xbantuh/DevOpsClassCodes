@@ -75,6 +75,13 @@
             <artifactId>vaadin-themes</artifactId>
             <version>${vaadin.version}</version>
         </dependency>
+       <dependency>
+          <groupId>jdk.tools</groupId>
+          <artifactId>jdk.tools</artifactId>
+          <scope>system</scope>
+          <version>1.8</version>
+          <systemPath>${env.JAVA_HOME}/lib/tools.jar</systemPath>
+       </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -427,12 +434,6 @@
                                 <format>xml</format>
                             </formats>
                         </configuration>
-		        <exclusions>
-                           <exclusion>
-                              <groupId>com.sun</groupId>
-                              <artifactId>tools</artifactId>
-                           </exclusion>
-                        </exclusions>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
